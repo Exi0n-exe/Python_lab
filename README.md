@@ -6,5 +6,5 @@
     - [Number Pattern](/LAB%201/Pattern/2.py)
 + [Binary Search](/LAB%201/BinarySearch.py)
 + Linear Sort
-+ Bubble Sort
-+ Sequential Search
++ [Bubble Sort](/LAB%201/BubbleSort.py)
++ [Sequential Search](/LAB%201/SequentialSearch.py)
