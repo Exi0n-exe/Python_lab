@@ -1,10 +1,8 @@
 class Job:
-     
-
-def __init__(self, taskId, deadline, profit):
-        self.taskId = taskId
-        self.deadline = deadline
-        self.profit = profit
+    def __init__(self, taskId, deadline, profit):
+            self.taskId = taskId
+            self.deadline = deadline
+            self.profit = profit
 
 def schedulejobs(jobs, T):
     profit=0
