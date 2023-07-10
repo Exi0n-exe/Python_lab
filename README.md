@@ -4,3 +4,4 @@
 2. [Job Sheduling](/LAB%202/2-2.py)
 3. [Dijkstra Algo](/LAB%203/3_1.ipynb)
 4. [Graph](/LAB%204/4.ipynb)
+5. [Huffman Alog](/LAB%205/5.ipynb)
