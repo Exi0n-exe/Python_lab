@@ -1,16 +1,17 @@
 from collections import defaultdict
 
+
 class Graph:
-    def __init__ (self, subjects):
+    def __init__(self, subjects):
         self.subjects = subjects
         self.graph = defaultdict(list)
-    
+
     def add_edge(self, subject1, subject2):
         self.graph[subject1].append(subject2)
         self.graph[subject2].append(subject1)
 
     def graph_coloring(self):
-        color_map={}
+        color_map = {}
         available_colors = set(range(1, len(self.subjects)+1))
         for subject in self.subjects:
             used_colors = set()
@@ -31,12 +32,13 @@ class Graph:
         color_map = self.graph_coloring()
         return max(color_map.values())
 
+
 subjects = ['Math', 'Physics', 'Chemistry', 'Biology']
 students = {
-    'Math' : ['Alice', 'Bob', 'Charlie'],
-    'Physics' : ['Alice', 'Charlie', 'David'],
-    'Chemistry' : ['Bob', 'Charlie,' 'Eve'],
-    'Biology' : ['Alice', 'David', 'Eve']
+    'Math': ['Alice', 'Bob', 'Charlie'],
+    'Physics': ['Alice', 'Charlie', 'David'],
+    'Chemistry': ['Bob', 'Charlie,' 'Eve'],
+    'Biology': ['Alice', 'David', 'Eve']
 }
 
 graph = Graph(subjects)
